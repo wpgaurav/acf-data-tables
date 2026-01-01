@@ -1,0 +1,240 @@
+/**
+ * ACF Data Tables - Frontend Styles
+ */
+
+/* Responsive Wrapper */
+.acf-dt-responsive-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Search Wrapper */
+.acf-dt-search-wrapper {
+    margin-bottom: 1rem;
+}
+
+.acf-dt-search {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.875rem;
+}
+
+.acf-dt-search:focus {
+    outline: none;
+    border-color: #0073aa;
+    box-shadow: 0 0 0 1px #0073aa;
+}
+
+/* Base Table */
+.acf-dt-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    background: #fff;
+}
+
+.acf-dt-table th,
+.acf-dt-table td {
+    padding: 0.75rem 1rem;
+    border: 1px solid #e1e1e1;
+    text-align: left;
+    vertical-align: top;
+}
+
+.acf-dt-table thead th {
+    background: #f8f9fa;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.acf-dt-table tbody td {
+    background: #fff;
+}
+
+/* Striped */
+.acf-dt-striped tbody tr:nth-child(even) td {
+    background: #f8f9fa;
+}
+
+/* Hover */
+.acf-dt-hover tbody tr:hover td {
+    background: #f0f6fc;
+}
+
+/* Alignment */
+.acf-dt-align-left {
+    text-align: left;
+}
+
+.acf-dt-align-center {
+    text-align: center;
+}
+
+.acf-dt-align-right {
+    text-align: right;
+}
+
+/* Sortable Headers */
+.acf-dt-sortable thead th {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    padding-right: 1.5rem;
+}
+
+.acf-dt-sortable thead th:hover {
+    background: #eef2f5;
+}
+
+.acf-dt-sort-icon {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    opacity: 0.3;
+}
+
+.acf-dt-sort-icon::before,
+.acf-dt-sort-icon::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+}
+
+.acf-dt-sort-icon::before {
+    top: -3px;
+    border-bottom: 5px solid currentColor;
+}
+
+.acf-dt-sort-icon::after {
+    bottom: -3px;
+    border-top: 5px solid currentColor;
+}
+
+/* Sort Active States */
+.acf-dt-sortable thead th.sort-asc .acf-dt-sort-icon,
+.acf-dt-sortable thead th.sort-desc .acf-dt-sort-icon {
+    opacity: 1;
+}
+
+.acf-dt-sortable thead th.sort-asc .acf-dt-sort-icon::after {
+    opacity: 0.3;
+}
+
+.acf-dt-sortable thead th.sort-desc .acf-dt-sort-icon::before {
+    opacity: 0.3;
+}
+
+/* Images in Tables */
+.acf-dt-image {
+    max-width: 100px;
+    max-height: 60px;
+    object-fit: contain;
+    border-radius: 3px;
+}
+
+/* Links */
+.acf-dt-table a {
+    color: #0073aa;
+    text-decoration: none;
+}
+
+.acf-dt-table a:hover {
+    text-decoration: underline;
+}
+
+/* No Results */
+.acf-dt-no-results {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+    font-style: italic;
+}
+
+/* Highlight Search Match */
+.acf-dt-highlight {
+    background: #ffeb3b;
+    padding: 0 2px;
+    border-radius: 2px;
+}
+
+/* Responsive Behavior */
+@media screen and (max-width: 768px) {
+    .acf-dt-table {
+        font-size: 0.875rem;
+    }
+    
+    .acf-dt-table th,
+    .acf-dt-table td {
+        padding: 0.5rem 0.75rem;
+    }
+    
+    .acf-dt-search {
+        max-width: 100%;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .acf-dt-search-wrapper {
+        display: none;
+    }
+    
+    .acf-dt-table {
+        font-size: 10pt;
+    }
+    
+    .acf-dt-table th,
+    .acf-dt-table td {
+        padding: 4pt 8pt;
+    }
+    
+    .acf-dt-responsive-wrapper {
+        overflow: visible;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .acf-dt-table {
+        background: #1e1e1e;
+        color: #e0e0e0;
+    }
+    
+    .acf-dt-table th,
+    .acf-dt-table td {
+        border-color: #404040;
+    }
+    
+    .acf-dt-table thead th {
+        background: #2d2d2d;
+    }
+    
+    .acf-dt-table tbody td {
+        background: #1e1e1e;
+    }
+    
+    .acf-dt-striped tbody tr:nth-child(even) td {
+        background: #252525;
+    }
+    
+    .acf-dt-hover tbody tr:hover td {
+        background: #303030;
+    }
+    
+    .acf-dt-search {
+        background: #2d2d2d;
+        color: #e0e0e0;
+        border-color: #404040;
+    }
+}

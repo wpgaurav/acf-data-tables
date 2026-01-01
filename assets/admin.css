@@ -1,0 +1,293 @@
+/**
+ * ACF Data Tables - Admin Styles
+ */
+
+/* Import Box */
+.acf-dt-import-box {
+    padding: 5px 0;
+}
+
+.acf-dt-import-box input[type="file"] {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.acf-dt-import-box textarea {
+    width: 100%;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.acf-dt-import-box hr {
+    margin: 15px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+/* Shortcode Box */
+.acf-dt-shortcode-box input[type="text"] {
+    font-family: monospace;
+    font-size: 12px;
+    background: #f6f7f7;
+}
+
+/* Excel Editor Wrapper */
+.acf-dt-excel-wrapper {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Toolbar */
+.acf-dt-toolbar {
+    padding: 12px 15px;
+    background: #f6f7f7;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+.acf-dt-toolbar .button {
+    margin: 0;
+}
+
+#acf-dt-save-status {
+    font-size: 13px;
+    color: #666;
+}
+
+#acf-dt-save-status.success {
+    color: #00a32a;
+}
+
+#acf-dt-save-status.error {
+    color: #d63638;
+}
+
+/* Editor Container */
+.acf-dt-editor-container {
+    overflow-x: auto;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+/* Editor Table */
+.acf-dt-editor {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.acf-dt-editor th,
+.acf-dt-editor td {
+    border: 1px solid #ddd;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.acf-dt-editor thead th {
+    background: #f0f0f1;
+    padding: 10px 12px;
+    font-weight: 600;
+    text-align: left;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    white-space: nowrap;
+}
+
+.acf-dt-editor tbody tr:nth-child(even) {
+    background: #fafafa;
+}
+
+.acf-dt-editor tbody tr:hover {
+    background: #f0f6fc;
+}
+
+.acf-dt-editor tbody tr.selected {
+    background: #e6f3ff;
+}
+
+/* Select Column */
+.acf-dt-select-col {
+    width: 40px;
+    text-align: center !important;
+    padding: 8px !important;
+}
+
+.acf-dt-select-col input[type="checkbox"] {
+    margin: 0;
+}
+
+/* Cell Input */
+.acf-dt-cell {
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    background: transparent;
+    font-size: 13px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.acf-dt-cell:focus {
+    outline: none;
+    background: #fff;
+    box-shadow: inset 0 0 0 2px #2271b1;
+}
+
+/* Empty Row */
+.acf-dt-empty-row td {
+    padding: 30px;
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
+/* Column Resizer */
+.acf-dt-editor th {
+    position: relative;
+}
+
+.acf-dt-col-resizer {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    cursor: col-resize;
+    background: transparent;
+}
+
+.acf-dt-col-resizer:hover {
+    background: #2271b1;
+}
+
+/* Add Column Dialog */
+.acf-dt-dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.acf-dt-dialog {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.3);
+    min-width: 350px;
+    max-width: 90%;
+}
+
+.acf-dt-dialog h3 {
+    margin: 0 0 15px;
+    padding: 0 0 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.acf-dt-dialog-row {
+    margin-bottom: 12px;
+}
+
+.acf-dt-dialog-row label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.acf-dt-dialog-row input,
+.acf-dt-dialog-row select {
+    width: 100%;
+}
+
+.acf-dt-dialog-buttons {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+/* Context Menu */
+.acf-dt-context-menu {
+    position: fixed;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    z-index: 100000;
+    min-width: 150px;
+}
+
+.acf-dt-context-menu-item {
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.acf-dt-context-menu-item:hover {
+    background: #f0f6fc;
+}
+
+.acf-dt-context-menu-item.destructive {
+    color: #d63638;
+}
+
+.acf-dt-context-menu-item.destructive:hover {
+    background: #fcf0f1;
+}
+
+.acf-dt-context-menu-divider {
+    height: 1px;
+    background: #ddd;
+    margin: 4px 0;
+}
+
+/* Loading State */
+.acf-dt-loading {
+    position: relative;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.acf-dt-loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin: -12px 0 0 -12px;
+    border: 2px solid #ddd;
+    border-top-color: #2271b1;
+    border-radius: 50%;
+    animation: acf-dt-spin 0.6s linear infinite;
+}
+
+@keyframes acf-dt-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+    .acf-dt-toolbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .acf-dt-toolbar .button {
+        width: 100%;
+    }
+}
